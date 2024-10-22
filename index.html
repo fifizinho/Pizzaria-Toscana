@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/0cf6585b12.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--menu-->
+    <header class="header">
+        <img src="/img/image-removebg-preview (4).png" alt="">
+        <h1>Pizzaria Toscana</h1>
+        <i id="verCarrinho" onclick="mostrarCarrinho()" class="fas fa-shopping-cart"></i>
+    </header>
+    <div class="container">
+        <!--Lista de produtos em cards-->
+        <div id="produtos-container" class="produtos-container">
+            <div class="card">
+                <img src="/img/ada34cd2101afafaba465aad112ee3c1_XL.jpg" alt="Pizza Frango Catupiry">
+                <h3>Pizza Frango Catupiry</h3>
+                <p>Preço: R$ 55,00</p>
+                <button class="adicionarCarrinho" onclick="adicionar('Pizza Frango Catupiry', 55)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="card">
+                <img src="/img/PIZZA-DE-CALABRESA.webp" alt="Pizza Calabresa">
+                <h3>Pizza Calabresa</h3>
+                <p>Preço: R$ 57,00</p>
+                <button class="adicionarCarrinho" onclick="adicionar('Pizza Calabresa', 57)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="card">
+                <img src="/img/20230108450701239hkkaca6g1.jpg" alt="Pizza Portuguesa">
+                <h3>Pizza Portuguesa</h3>
+                <p>Preço: R$ 60,00</p>
+                <button class="adicionarCarrinho" onclick="adicionar('Pizza Portuguesa', 60)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="card">
+                <img src="/img/pizza-brocolis-caboclo.webp" alt="Pizza Brócolis com Bacon">
+                <h3>Pizza Brócolis com Bacon</h3>
+                <p>Preço: R$ 59,00</p>
+                <button class="adicionarCarrinho" onclick="adicionar('Pizza Brócolis com Bacon', 59)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="card">
+                <img src="/img/32699af76cfc6e0191d612ffd4e88ee9_XL.jpg" alt="Pizza 4 Queijos">
+                <h3>Pizza 4 Queijo</h3>
+                <p>Preço: R$ 52,00</p>
+                <button class="adicionarCarrinho" onclick="adicionar('Pizza 4 Queijos', 52)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="card">
+                <img src="/img/238.Pizza-de-Estrogonofe.webp" alt="Pizza Strogonoff">
+                <h3>Pizza Strogonoff</h3>
+                <p>Preço: R$ 60,00</p>
+                <button class="adicionarCarrinho" onclick="adicionar('Pizza Strogonoff', 60)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
